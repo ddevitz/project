@@ -7,8 +7,8 @@ function App() {
 
   return (
     <Provider>
-      <Dashboard />
-      {/* <SugeryScreen/> */}
+      {/* <Dashboard /> */}
+      <SugeryScreen/>
     </Provider>
   )
 }

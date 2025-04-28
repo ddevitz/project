@@ -2,6 +2,7 @@ import { Header } from "@/components/Header"
 import { ReportTable } from "@/components/ReportTable"
 import { Box, Container, Input, InputGroup } from "@chakra-ui/react"
 import { PiMagnifyingGlassLight } from "react-icons/pi"
+import { reportItems } from "@/utils/report-example"
 
 
 function SugeryScreen(){
@@ -17,7 +18,7 @@ function SugeryScreen(){
           <Input rounded="md" placeholder="Pesquisar"/>
         </InputGroup>
         
-        <ReportTable />
+        <ReportTable items={reportItems} />
         
       </Container>
     </Box>
