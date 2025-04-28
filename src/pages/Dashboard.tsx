@@ -1,10 +1,13 @@
 import { Box, Container, Flex } from "@chakra-ui/react"
 import { DashboardCard } from "@/components/DashboardCard"
 import { Header } from "@/components/Header"
+import { Graphic } from "@/components/Graphic"
+
+import { dataGraphic } from "@/utils/data-graphic"
 
 function Dashboard(){
   return(
-    <Box>
+    <Box mb={10}>
       <Container>
         <Header 
           title="Dashboard"
@@ -61,6 +64,10 @@ function Dashboard(){
             href="#"
           />
         </Flex>
+      </Container>
+
+      <Container maxW="600px" mt="12" p="0">
+        <Graphic data={dataGraphic} />
       </Container>
     </Box>
   )

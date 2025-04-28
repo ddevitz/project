@@ -8,12 +8,12 @@ export type ReportItemProps = {
 }
 
 export const reportItems: ReportItemProps[] = [
-  { id: 1, type: "Endócrina", specialty: "Angiologia", local: "Centro Cirúrgico 1", duration:"2h 10min", items: 5 },
-  { id: 2, type: "Endócrina", specialty: "Angiologia", local: "Centro Cirúrgico 1", duration:"2h 10min", items: 3 },
+  { id: 1, type: "Endócrina", specialty: "Angiologia", local: "Centro Cirúrgico 1", duration:"1h 30min", items: 3 },
+  { id: 2, type: "Endócrina", specialty: "Angiologia", local: "Centro Cirúrgico 1", duration:"2h 10min", items: 2 },
   { id: 3, type: "Cardíaca", specialty: "Cardiologia", local: "Centro Cirúrgico 1", duration:"2h 10min", items: 3 },
-  { id: 4, type: "Cardíaca", specialty: "Cardiologia", local: "Centro Cirúrgico 1", duration:"2h 10min", items: 3 },
+  { id: 4, type: "Cardíaca", specialty: "Cardiologia", local: "Centro Cirúrgico 1", duration:"2h 10min", items: 5 },
   { id: 5, type: "Endócrina", specialty: "Angiologia", local: "Centro Cirúrgico 1", duration:"2h 10min", items: 3 },
-  { id: 6, type: "Endócrina", specialty: "Angiologia", local: "Centro Cirúrgico 1", duration:"2h 10min", items: 3 },
+  { id: 6, type: "Endócrina", specialty: "Angiologia", local: "Centro Cirúrgico 1", duration:"2h 10min", items: 4 },
   { id: 7, type: "Cardíaca", specialty: "Cardiologia", local: "Centro Cirúrgico 1", duration:"2h 10min", items: 3 },
   { id: 8, type: "Endócrina", specialty: "Angiologia", local: "Centro Cirúrgico 1", duration:"2h 10min", items: 3 },
   { id: 9, type: "Cardíaca", specialty: "Cardiologia", local: "Centro Cirúrgico 1", duration:"2h 10min", items: 3 },

@@ -27,7 +27,6 @@ function DashboardCard({ type, title, value, description, href }: DashboardCardP
       w="300px" 
       p={6} 
       borderRadius="md" 
-      mb="20px" 
       border="none" 
       cursor="pointer" 
       _hover={{ transition: "all 0.3s ease", boxShadow:"xl"}}
