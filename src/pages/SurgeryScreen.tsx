@@ -5,7 +5,7 @@ import { PiMagnifyingGlassLight } from "react-icons/pi"
 import { reportItems } from "@/utils/report-example"
 
 
-function SugeryScreen(){
+function SurgeryScreen(){
   return(
     <Box>
       <Container>
@@ -25,4 +25,4 @@ function SugeryScreen(){
   )
 }
 
-export { SugeryScreen }
+export { SurgeryScreen }

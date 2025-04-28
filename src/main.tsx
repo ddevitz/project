@@ -1,10 +1,13 @@
 import { StrictMode } from 'react'
+import { BrowserRouter } from 'react-router-dom'
 import { createRoot } from 'react-dom/client'
 
-import { App } from './App.tsx'
+import { DashboardRoutes } from './routes/dashboardRoutes.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <DashboardRoutes />
+    </BrowserRouter>
   </StrictMode>,
 )

@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import { Card, Heading, Text, HStack, Box, Flex } from "@chakra-ui/react";
 import { cardStyles } from "@/utils/card-styles";
 
@@ -6,13 +8,32 @@ type DashboardCardProps = {
   title: string;
   value: number;
   description: string;
+  href: string;
 };
 
-function DashboardCard({ type, title, value, description }: DashboardCardProps) {
+function DashboardCard({ type, title, value, description, href }: DashboardCardProps) {
+  const navigate = useNavigate();
   const { icon: Icon, cardBgColor, iconBgColor, iconColor } = cardStyles[type];
 
+  const handleClick = () => {
+    if (href) {
+      navigate(href);
+    }
+  };
+
   return (
-    <Card.Root bg={cardBgColor} w="300px" p={6} borderRadius="md" mb="20px" border="none" cursor="pointer" _hover={{ transition: "all 0.3s ease", boxShadow:"xl"}}> {/*transform: "scale(1.02)"*/}
+    <Card.Root 
+      bg={cardBgColor} 
+      w="300px" 
+      p={6} 
+      borderRadius="md" 
+      mb="20px" 
+      border="none" 
+      cursor="pointer" 
+      _hover={{ transition: "all 0.3s ease", boxShadow:"xl"}}
+      onClick={handleClick}
+    > {/*transform: "scale(1.02)" , boxShadow:"xl"*/}
+
       <Card.Header p={0} mb={2}>
         <Flex justify="space-between" gap="10px">
           <Box>

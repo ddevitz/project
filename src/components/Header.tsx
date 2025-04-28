@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom"
+
 import { Box, Center, Heading, IconButton } from "@chakra-ui/react"
 import { BsArrowLeft } from "react-icons/bs"
 
@@ -6,8 +8,16 @@ type HeaderProps = {
 }
 
 function Header({ title }:HeaderProps) {
+  const navigate = useNavigate()
+
   return (
-    <Box position="relative" w="100%" maxW="600px" paddingBlock="36px" marginX="auto">
+    <Box 
+      position="relative" 
+      w="100%" 
+      maxW="600px" 
+      paddingBlock="36px" 
+      marginX="auto"
+    >
       <IconButton
         variant="ghost"
         aria-label="Voltar"
@@ -16,6 +26,7 @@ function Header({ title }:HeaderProps) {
         top="50%"
         transform="translateY(-50%)"
         cursor="pointer"
+        onClick={() => navigate(-1)}
       >
         <BsArrowLeft size={30} />
       </IconButton>

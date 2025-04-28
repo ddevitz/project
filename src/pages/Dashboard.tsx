@@ -18,6 +18,7 @@ function Dashboard(){
             title="Cirurgias Realizadas"
             value={8}
             description="Número de cirurgias realizadas em 24h"
+            href="/surgery-report"
           />
 
           <DashboardCard 
@@ -25,6 +26,7 @@ function Dashboard(){
             title="Arsenal"
             value={85}
             description="Total de Kits disponíveis"
+            href="#"
           />
 
           <DashboardCard 
@@ -32,6 +34,7 @@ function Dashboard(){
             title="Kits na sala de Cirurgia"
             value={5}
             description="Kits na sala de cirurgia"
+            href="#"
           />
 
           <DashboardCard 
@@ -39,6 +42,7 @@ function Dashboard(){
             title="Kits em Limpeza"
             value={10}
             description="Kits em processo de limpeza"
+            href="#"
           />
 
           <DashboardCard 
@@ -46,6 +50,7 @@ function Dashboard(){
             title="Tempo médio de Cirurgia"
             value={120}
             description="Duração média de cirurgia"
+            href="#"
           />
 
           <DashboardCard 
@@ -53,6 +58,7 @@ function Dashboard(){
             title="Tempo médio de Autoclavagem"
             value={90}
             description="Tempo médio de autoclavagem dos kits"
+            href="#"
           />
         </Flex>
       </Container>
