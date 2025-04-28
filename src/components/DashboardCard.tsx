@@ -6,7 +6,7 @@ import { cardStyles } from "@/utils/card-styles";
 type DashboardCardProps = {
   type: keyof typeof cardStyles;
   title: string;
-  value: number;
+  value: string;
   description: string;
   href: string;
 };

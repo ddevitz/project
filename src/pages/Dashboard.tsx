@@ -19,7 +19,7 @@ function Dashboard(){
           <DashboardCard 
             type="surgeries"
             title="Cirurgias Realizadas"
-            value={8}
+            value="8"
             description="Número de cirurgias realizadas em 24h"
             href="/surgery-report"
           />
@@ -27,7 +27,7 @@ function Dashboard(){
           <DashboardCard 
             type="arsenal"
             title="Arsenal"
-            value={85}
+            value="85/100"
             description="Total de Kits disponíveis"
             href="#"
           />
@@ -35,7 +35,7 @@ function Dashboard(){
           <DashboardCard 
             type="kitsInSurgery"
             title="Kits na sala de Cirurgia"
-            value={5}
+            value="5"
             description="Kits na sala de cirurgia"
             href="#"
           />
@@ -43,7 +43,7 @@ function Dashboard(){
           <DashboardCard 
             type="kitsInCleaning"
             title="Kits em Limpeza"
-            value={10}
+            value="10"
             description="Kits em processo de limpeza"
             href="#"
           />
@@ -51,7 +51,7 @@ function Dashboard(){
           <DashboardCard 
             type="avgSurgeryTime"
             title="Tempo médio de Cirurgia"
-            value={120}
+            value="1h 30min"
             description="Duração média de cirurgia"
             href="#"
           />
@@ -59,14 +59,14 @@ function Dashboard(){
           <DashboardCard 
             type="avgSterilizationTime"
             title="Tempo médio de Autoclavagem"
-            value={90}
+            value="90 min"
             description="Tempo médio de autoclavagem dos kits"
             href="#"
           />
         </Flex>
       </Container>
 
-      <Container maxW="600px" mt="12" p="0">
+      <Container maxW="650px" mt="12" pb="10px">
         <Graphic data={dataGraphic} />
       </Container>
     </Box>
