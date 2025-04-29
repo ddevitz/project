@@ -8,8 +8,8 @@ export function DashboardRoutes(){
   return(
     <Provider>
       <Routes>
-        <Route path="/"index element={<Dashboard />} />
-        <Route path="/surgery-report"index element={<SurgeryScreen />} />
+        <Route path="/" index element={<Dashboard />} />
+        <Route path="/surgery-report" element={<SurgeryScreen />} />
       </Routes>
     </Provider>
   )

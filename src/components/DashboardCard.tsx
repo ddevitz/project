@@ -31,7 +31,7 @@ function DashboardCard({ type, title, value, description, href }: DashboardCardP
       cursor="pointer" 
       _hover={{ transition: "all 0.3s ease", boxShadow:"xl"}}
       onClick={handleClick}
-    > {/*transform: "scale(1.02)" , boxShadow:"xl"*/}
+    >
 
       <Card.Header p={0} mb={2}>
         <Flex justify="space-between" gap="10px">
