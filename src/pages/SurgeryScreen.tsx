@@ -23,7 +23,7 @@ function SurgeryScreen(){
         item.duration?.toLowerCase().includes(searchTerm.toLowerCase()) ||
         item.items?.toString().includes(searchTerm) 
       )
-      setFilteredItems(filtered) //verificar
+      setFilteredItems(filtered)
     } else {
       setFilteredItems(reportItems)
     }
