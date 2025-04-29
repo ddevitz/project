@@ -6,7 +6,7 @@ import { SurgeryScreen } from "@/pages/SurgeryScreen.tsx";
 
 export function DashboardRoutes(){
   return(
-    <Provider>
+    <Provider forcedTheme="light">
       <Routes>
         <Route path="/" index element={<Dashboard />} />
         <Route path="/surgery-report" element={<SurgeryScreen />} />
